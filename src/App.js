@@ -1,10 +1,11 @@
-import logo from './logo.svg';
+
 import './App.css';
-import Navbar from './components/navbar.js';
+import Home from './screens/Home';
+
 function App() {
   return (
     <> 
-    <div> <Navbar/> </div> 
+    <div> <Home></Home> </div> 
     </>
 
   );
