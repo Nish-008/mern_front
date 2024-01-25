@@ -1,11 +1,17 @@
 import React from 'react';
-import './Carousel.css'; 
+import './Carousel.css';
 
 export default function Carousel() {
   return (
     <div>
       <div id="carouselExampleControls" className="carousel slide" data-bs-ride="carousel">
         <div className="carousel-inner">
+          <div className="carousel-caption" style={{zIndex:"10"}}>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
           <div className="carousel-item active">
             <div className="overlay"></div>
             <img src="https://plus.unsplash.com/premium_photo-1664391728401-632c929690b4?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bWVhdGxvYWZ8ZW58MHx8MHx8fDA%3D" className="d-block w-100" alt="..." />
